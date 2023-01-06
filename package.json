@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "monorepo-oclif-packaging-test",
+  "version": "1.0.0",
+  "description": "Monorepo project to test npm packaing for an oclif app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Osuna",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "my-oclif-test": "file:packages/my-oclif-test"
+  },
+  "devDependencies": {
+    "@oclif/core": "^1.23.1",
+    "@oclif/plugin-help": "^5.1.22",
+    "oclif": "^3.4.3"
+  }
+}
